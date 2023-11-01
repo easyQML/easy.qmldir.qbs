@@ -1,0 +1,81 @@
+site_name: easy.qmldir for Qbs
+repo_url: https://github.com/easyQML/easy.qmldir.qbs
+repo_name: easyQML/easy.qmldir.qbs
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2023 Serhii Olendarenko
+theme:
+  name: material
+  logo: assets/easyQML.png
+  favicon: assets/easyQML_32.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: white
+    accent: deep purple
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+  - pymdownx.arithmatex:
+      generic: true
+  # - pymdownx.betterem:
+  #     smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - scripts/custom-tags.js
+  - scripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Usage in Qbs: getting-started/usage.md
+  - Reference:
+    - Modules:
+      - easy.qmldir:
+        - reference/index.md
+    - Items:
+      - EasyQmldir: reference/easy-qmldir-item.md
+  - Development: development.md

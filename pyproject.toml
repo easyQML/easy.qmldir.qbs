@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "easy-colors-qml"
+version = "1.0.0"
+description = ""
+authors = ["GooRoo <sergey.olendarenko@gmail.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+packages = [{include = "easy"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs-material = "^9.4.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
