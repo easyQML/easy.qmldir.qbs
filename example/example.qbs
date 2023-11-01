@@ -7,14 +7,14 @@ CppApplication {
 		versionAtLeast: '6.5'
 	}
 
-	Depends { name: 'easy.qmldir' }  // (1)
+	Depends { name: 'easy.qmldir' }  // (1)!
 
 	name: 'easy-qmldir-qml-example'
 
-	Qt.qml.importName: 'easy.qmldir.example'  // (2)
-	Qt.qml.importVersion: '1.0'               // (3)
+	Qt.qml.importName: 'easy.qmldir.example'  // (2)!
+	Qt.qml.importVersion: '1.0'               // (3)!
 
-	easy.qmldir.plugin: undefined  // (4)
+	easy.qmldir.plugin: undefined  // (4)!
 
 	Group {
 		name: 'C++ files'
@@ -29,13 +29,12 @@ CppApplication {
 		Qt.core.resourceSourceBase: 'qml/'
 		Qt.core.resourcePrefix: '/qt/qml/'
 		fileTags: [
-			'qt.core.resource_data',  // (5)
-			'easy.qmldir.inputs'      // (6)
+			'qt.core.resource_data',  // (5)!
+			'easy.qmldir.inputs'      // (6)!
 		]
 	}
 
-	// (7)
-	EasyQmldir {
+	EasyQmldir {  // (7)!
 		Qt.core.resourcePrefix: '/qt/qml/easy/qmldir/example/'
 		fileTags: ['qt.core.resource_data']
 	}
