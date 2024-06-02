@@ -18,7 +18,7 @@ Provides facilities to generate [Module Definition `qmldir` Files](https://doc.q
 
 ## Detailed Description
 
-This modules does all the hard job of exporting assets from a sketch document or several of those. It can be used in conjunction with [`SketchExport`](../getting-started/usage.md#using-sketchexport-product) or separately with your [custom products](../getting-started/usage.md#using-custom-product).
+This module takes away the burden of manually writing `qmldir` files for your QML modules. It lists all the files it knows, tagged with an [input tag](#input), in the [Module Definition File](https://doc.qt.io/qt-6/qtqml-modules-qmldir.html), and provides the ability to set values for other fields in that file.
 
 ## File Tags
 
