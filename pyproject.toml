@@ -1,17 +1,11 @@
-[tool.poetry]
-name = "easy-colors-qml"
+[project]
+name = "easy-qmldir-qbs"
 version = "1.0.0"
 description = ""
-authors = ["GooRoo <sergey.olendarenko@gmail.com>"]
+authors = [{ name = "GooRoo", email = "sergey.olendarenko@gmail.com" }]
 license = "BSD-3-Clause"
 readme = "README.md"
-packages = [{include = "easy"}]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-mkdocs-material = "^9.4.6"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.10"
+dependencies = [
+    "mkdocs-material>=9.5.44",
+]
