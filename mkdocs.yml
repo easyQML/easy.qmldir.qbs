@@ -76,5 +76,5 @@ nav:
       - easy.qmldir:
         - reference/index.md
     - Items:
-      - EasyQmldir: reference/easy-qmldir-item.md
+      - easy.Qmldir: reference/easy-qmldir-item.md
   - Development: development.md

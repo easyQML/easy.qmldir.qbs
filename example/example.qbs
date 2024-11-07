@@ -1,5 +1,7 @@
 import qbs.FileInfo
 
+import easy as Easy
+
 CppApplication {
 	Depends {
 		name: 'Qt'
@@ -34,7 +36,7 @@ CppApplication {
 		]
 	}
 
-	EasyQmldir {  // (7)!
+	Easy.Qmldir {  // (7)!
 		Qt.core.resourcePrefix: '/qt/qml/easy/qmldir/example/'
 		fileTags: ['qt.core.resource_data']
 	}

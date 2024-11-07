@@ -43,7 +43,7 @@ import qbs
 
 Project {
 	qbsSearchPaths: [
-		'<path/to/qbs-sketch/root/folder>'
+		'<path/to/easy.qmldir.qbs/root/folder>'
 	]
 
 	// ...
