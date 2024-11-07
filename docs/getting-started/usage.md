@@ -6,7 +6,7 @@ Here is a short example. Click on :material-plus-circle: to see the explanation.
 ---8<--- "example/example.qbs"
 ```
 
-1. Import `easy` items under the some name. I prefer `Easy`.
+1. Import `easy` items under some name. I prefer `Easy`.
 2. Add a dependency on the `easy.qmldir` module in your product.
 3. Don't forget to set the module name via [`Qt.qml.importName`](https://doc.qt.io/qbs/qml-qbsmodules-qt-qml.html#importName-prop).
 4. Set the module version using [`Qt.qml.importVersion`](https://doc.qt.io/qbs/qml-qbsmodules-qt-qml.html#importVersion-prop).
